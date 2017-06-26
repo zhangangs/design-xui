@@ -1,0 +1,50 @@
+//
+// Variables 变量文件
+// --------------------------------------------------
+
+/* Font
+-------------------------------------------------- */
+@font-family: "Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,\\5FAE\8F6F\96C5\9ED1,Arial,sans-serif";
+
+@font-size-12: 12px;
+@font-size-13: 13px;
+@font-size-14: 14px;
+@font-size-15: 15px;
+@font-size-16: 16px;
+@font-size-18: 18px;
+@font-size-20: 20px;
+
+
+/* Colors 定义颜色
+-------------------------------------------------- */
+@base-primary: #2d8cf0; 
+@base-success: #19be6b;
+@base-info: #5bc0de;
+@base-warn: #ff9900;
+@base-danger: #ed3f14; 
+
+/* 字体颜色 */
+@base-color-default: #495060;
+@base-color-white: #fff;
+
+/* 边框颜色  */
+@border-color-default: #dddee1;
+
+/* Border-radius
+-------------------------------------------------- */
+.borderRadius(@radius: 3px){
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+  border-radius: @radius;
+}
+
+
+/* Hover Transition Style 
+-------------------------------------------------- */
+.Transition(@time: .3s){
+  -moz-transition: all @time ease-out;
+  -webkit-transition: all @time ease-out;
+  transition: all @time ease-out;
+  
+}
+

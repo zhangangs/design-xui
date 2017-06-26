@@ -1,0 +1,48 @@
+@import "variables.less";
+
+.xui-btn {
+  padding: 6px 15px;
+  font-size: @font-size-13; background: #fff;
+  border: 1px solid @border-color-default;
+  color: @base-color-default; 
+  line-height: 1.42857143;
+  cursor: pointer; text-align: center;
+  .borderRadius;
+  .Transition;
+  outline: none;
+  &:hover{
+    background-color: @base-color-white;
+    border-color: @base-primary;
+    color: @base-primary;
+  }
+}
+
+/* button 构造函数  */
+.btn-base(@bgColor, @Color, @BorderColor){
+  background-color: @bgColor;
+  color: @Color;
+  border-color: @BorderColor;
+  &:hover{
+    opacity: .7;
+    color: @Color;
+    background-color: @bgColor;    
+    border-color: @BorderColor;
+  }
+}
+
+.xui-btn-primary{
+  .btn-base(@base-primary, @base-color-white, @base-primary);  
+}
+.xui-btn-success{
+  .btn-base(@base-success, @base-color-white, @base-success);  
+}
+.xui-btn-info{
+  .btn-base(@base-info, @base-color-white, @base-info);  
+}
+.xui-btn-warn{
+  .btn-base(@base-warn, @base-color-white, @base-warn);  
+}
+.xui-btn-danger{
+  .btn-base(@base-danger, @base-color-white, @base-danger);  
+}
+
