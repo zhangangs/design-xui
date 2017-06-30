@@ -1,0 +1,109 @@
+/* grid 网格
+ * --------------------------------------------
+ */
+
+@import "variables.less";
+
+.xui-row{
+  position: relative; display: block;
+  margin-left: 0; margin-right: 0;
+  height: auto;
+  &:before{
+    content: ""; display: table;
+  }
+  &:after{
+    content: "";
+    width: 0; height: 0; display: table; clear: both;
+  }
+}
+
+.xui-col-1{
+  width: 8.33333333%;
+}
+.xui-col-2{
+  width: 16.66666667%;
+}
+.xui-col-3{
+  width: 25%;
+}
+.xui-col-4{
+  width: 33.33333333%;
+}
+.xui-col-5{
+  width: 41.66666667%;
+}
+.xui-col-6{
+  width: 50%;
+}
+.xui-col-7{
+  width: 58.33333333%;
+}
+.xui-col-8{
+  width: 66.66666667%;
+}
+.xui-col-9{
+  width: 75%;
+}
+.xui-col-10{
+  width: 83.33333333%;
+}
+.xui-col-11{
+  width: 91.66666667%;
+}
+.xui-col-12{
+  width: 100%;
+}
+
+.xui-col-1,
+.xui-col-2,
+.xui-col-3,
+.xui-col-4,
+.xui-col-5,
+.xui-col-6,
+.xui-col-7,
+.xui-col-8,
+.xui-col-9,
+.xui-col-10,
+.xui-col-11,
+.xui-col-12{
+  float: left;
+}
+
+
+.xui-col-offset-1{
+  margin-left: 8.33333333%;
+}
+.xui-col-offset-2{
+  margin-left: 16.66666667%;
+}
+.xui-col-offset-3{
+  margin-left: 25%;
+}
+.xui-col-offset-4{
+  margin-left: 33.33333333%;
+}
+.xui-col-offset-5{
+  margin-left: 41.66666667%;
+}
+.xui-col-offset-6{
+  margin-left: 50%;
+}
+.xui-col-offset-7{
+  margin-left: 58.33333333%;
+}
+.xui-col-offset-8{
+  margin-left: 66.66666667%;
+}
+.xui-col-offset-9{
+  margin-left: 75%;
+}
+.xui-col-10{
+  width: 83.33333333%;
+}
+.xui-col-11{
+  width: 91.66666667%;
+}
+.xui-col-12{
+  width: 100%;
+}
+

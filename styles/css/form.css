@@ -1,0 +1,24 @@
+/* button 按钮
+ * --------------------------------------------
+ */
+/* Font
+-------------------------------------------------- */
+/* Colors 定义颜色
+-------------------------------------------------- */
+/* 字体颜色 */
+/* 边框颜色  */
+/* Border-radius
+-------------------------------------------------- */
+/* Hover Transition Style 
+-------------------------------------------------- */
+/* radio */
+.xui-radio input[type="radio"] {
+  position: relative;
+  top: -1px;
+  vertical-align: middle;
+}
+.xui-radio-inline {
+  display: inline-block;
+  margin-right: 15px;
+}
+/* xui-input */

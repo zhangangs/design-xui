@@ -3,17 +3,37 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles/css/layout.css">
+    <link rel="stylesheet" href="styles/css/grid.css"/>
+    <link rel="stylesheet" href="styles/css/form.css"/>
     <link rel="stylesheet" href="styles/css/button.css"/>
-    <title></title>
+    <title>xiu DEMO</title>
+    <style type="text/css">
+    	.demo-grid{margin-bottom: 10px;}
+    	.demo-grid>div{
+    		padding: 10px 0;
+    	}
+    	.demo-grid>div:nth-child(odd){
+    		background: #2d8cf0;
+    		text-align: center;
+    		font-size: 14px;
+    		color: #fff;
+    	}
+    	.demo-grid>div:nth-child(even){
+    		background: #19be6b;
+    		text-align: center;
+    		font-size: 14px;
+    		color: #fff;
+    	}
+    </style>
   </head>
   <body>
-    <div>
+    <div name="按钮">
     	<h1>按钮</h1>
     	<hr />
-      <button class="xui-btn">
+      <button class="xui-btn xui-btn-default">
       	<span>按钮</span>
       </button>
-      <button class="xui-btn xui-btn-primary">
+      <button disabled class="xui-btn xui-btn-primary">
       	<span>Primary</span>
       </button>
       <button class="xui-btn xui-btn-success">
@@ -28,6 +48,88 @@
       <button class="xui-btn xui-btn-danger">
       	<span>Danger</span>
       </button>
+      <button class="xui-btn xui-btn-link">
+      	<span>link链接 </span>
+      </button>
+      <button disabled class="xui-btn xui-btn-default">
+      	<span>disabled</span>
+      </button>
+      <p>
+      	<button class="xui-btn xui-btn-primary ivu-btn-block">
+	      	<span>块级button</span>
+	      </button>
+      </p>
+      <p>
+      	<button class="xui-btn xui-btn-success ivu-btn-block">
+	      	<span>块级button</span>
+	      </button>
+      </p>
+      <p>
+      	<h5>按钮组</h5>
+      	<div class="xui-btn-gruop">
+      		<button class="xui-btn xui-btn-default">第一个</button>
+      		<button class="xui-btn xui-btn-default">第二个</button>
+      		<button class="xui-btn xui-btn-default">第三个</button>
+      	</div>
+      </p>
     </div>
+    
+    <div name="栅格">
+    	<h1>栅格</h1>
+    	<hr />
+    	<div class="xui-row demo-grid">
+    		<div class="xui-col-12">xui-col-12</div>
+    	</div>
+    	<div class="xui-row demo-grid">
+    		<div class="xui-col-11">xui-col-11</div>
+    		<div class="xui-col-1">xui-col-1</div>
+    	</div>
+    	<div class="xui-row demo-grid">
+    		<div class="xui-col-10">xui-col-10</div>
+    		<div class="xui-col-2">xui-col-2</div>
+    	</div>
+    	<div class="xui-row demo-grid">
+    		<div class="xui-col-6">xui-col-6</div>
+    		<div class="xui-col-6">xui-col-6</div>
+    	</div>
+    	<div class="xui-row demo-grid">
+    		<div class="xui-col-3">xui-col-3</div>
+    		<div class="xui-col-5">xui-col-5</div>
+    		<div class="xui-col-4">xui-col-4</div>
+    	</div>
+    	    	<div class="xui-row demo-grid">
+    		<div class="xui-col-3">xui-col-3</div>
+
+    		<div class="xui-col-4 xui-col-offset-5">xui-col-4 xui-col-offset-5</div>
+    	</div>
+    </div>
+    <div name="表单">
+    	<h1>表单</h1>
+    	<hr />
+    	<input class="xui-input" type="text" placeholder="请输入..." />
+    	<h5>你喜欢什么水果？</h5>
+    	<div class="xui-radio">
+    		<label><input type="radio" name="fruits" /> 苹果</label>
+    	</div>
+    	<div class="xui-radio">
+    		<label><input type="radio" name="fruits" /> 香蕉</label>
+    	</div>
+    	<div class="xui-radio">
+    		<label><input type="radio" name="fruits" /> 梨</label>
+    	</div>
+    	<p>
+    		<div class="xui-radio xui-radio-inline">
+	    		<label><input type="radio" name="fruits" /> 苹果</label>
+	    	</div>
+	    	<div class="xui-radio xui-radio-inline">
+	    		<label><input type="radio" name="fruits" /> 香蕉</label>
+	    	</div>
+	    	<div class="xui-radio xui-radio-inline">
+	    		<label><input type="radio" name="fruits" /> 梨</label>
+	    	</div>
+    	</p>
+    </div>
+    
+    
   </body>
 </html>
