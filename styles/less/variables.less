@@ -28,9 +28,13 @@
 /* 字体颜色 */
 @base-color-default: #495060;
 @base-color-white: #fff;
+@base-color-dddee1: #dddee1;
+@base-color-e9eaec: #e9eaec;
 
 /* 边框颜色  */
 @border-color-default: #dddee1;
+@border-color-e4e5e7: #e4e5e7;
+@border-color-bcbcbc: #bcbcbc;
 
 /* Border-radius
 -------------------------------------------------- */
@@ -44,8 +48,21 @@
 /* Hover Transition Style 
 -------------------------------------------------- */
 .Transition(@time: .3s){
-  -moz-transition: all @time ease-out;
-  -webkit-transition: all @time ease-out;
-  transition: all @time ease-out;
+  -moz-transition: color @time ease-out, background-color @time ease-in-out;
+  -webkit-transition: color @time ease-out, background-color @time ease-in-out;
+  transition: color @time ease-out, background-color @time ease-in-out;
 }
 
+
+.BoxShadow(@h-shadow, @v-shadow, @blur, @spread, @color:rgba(45,140,240,.2)){
+  -moz-box-shadow: @arguments;
+  -webkit-box-shadow: @arguments;
+  box-shadow: @arguments;
+}
+
+
+.BoxSizing{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}

@@ -399,6 +399,18 @@ template {
 -------------------------------------------------- */
 /* Hover Transition Style 
 -------------------------------------------------- */
+.BoxSizing {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 body {
   font-family: "Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,\\5FAE\8F6F\96C5\9ED1,Arial,sans-serif";
   font-size: 12px;
@@ -423,4 +435,13 @@ h6 {
 hr {
   border: 0;
   border-top: 1px solid #dddee1;
+}
+a {
+  color: #2d8cf0;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+a:hover {
+  opacity: .8;
+  text-decoration: underline;
 }

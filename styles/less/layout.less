@@ -7,6 +7,9 @@
 //引入button按钮样式
 //@import "button.less"; 
 
+*, :after, :before{
+  .BoxSizing();
+}
 
 body{
   font-family: @font-family;
@@ -34,4 +37,12 @@ h6{
 hr{
   border: 0;
   border-top: 1px solid @border-color-default;
+}
+
+a{
+  color: @base-primary; text-decoration: none;
+  transition: all .3s ease-in-out;
+}
+a:hover{
+  opacity: .8; text-decoration: underline;
 }

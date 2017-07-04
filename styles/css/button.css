@@ -11,6 +11,11 @@
 -------------------------------------------------- */
 /* Hover Transition Style 
 -------------------------------------------------- */
+.BoxSizing {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 button[disabled]:hover {
   cursor: no-drop;
 }
@@ -31,9 +36,9 @@ button[disabled].xui-btn-default:hover {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  -moz-transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  -moz-transition: color 0.3s ease-out, background-color 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-out, background-color 0.3s ease-in-out;
+  transition: color 0.3s ease-out, background-color 0.3s ease-in-out;
   outline: none;
 }
 .xui-btn:hover {
