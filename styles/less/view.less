@@ -1,0 +1,262 @@
+@charset 'utf-8';
+
+/* view 视图增强
+ * --------------------------------------------
+ */
+
+//引入变量文件
+@import "variables.less";
+
+
+//alert 警告提示
+.xui-alert{
+    position: relative;
+    .borderRadius();
+    padding: 10px 16px;
+    font-size: 12px;
+    .xui-alert-message{
+        font-size: 13px;
+    }
+    .xui-alert-desc{
+        margin-top: 4px;
+        line-height: 21px;
+    }
+    .xui-alert-desc:empty{
+        display: none;
+    }
+}
+
+.xui-alert-info{
+    border: 1px solid #d5e8fc;
+    background-color: #eaf4fe;
+    .xui-alert-icon{
+        color: @base-primary;
+    }
+}
+
+.xui-alert-success{
+    border: 1px solid #d1f2e1;
+    background-color: #e8f9f0;
+    .xui-alert-icon{
+        color: @base-success;
+    }
+}
+
+.xui-alert-warning{
+    border: 1px solid #ffebcc;
+    background-color: #fff5e6;
+    .xui-alert-icon{
+        color: @base-warn;
+    }
+}
+
+.xui-alert-error{
+    border: 1px solid #fbd9d0;
+    background-color: #fdece8;
+    .xui-alert-icon{
+        color: @base-danger;
+    }
+}
+
+.xui-alert-with-icon{
+    padding-left: 48px;
+    .xui-alert-icon{
+        position: absolute;
+        left: 20px;
+        font-size: 14px;
+        top: 50%;
+        margin-top: -8px;        
+    }
+} 
+
+//message 全局提示
+.xiu-message-container{
+    position: fixed;
+    left: 0;
+    top: 16px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.xiu-message{
+    position: absolute;
+    left: 50%;
+    width: auto; 
+    opacity: 0;
+}
+
+.xui-message-notice-content{
+    position: relative;
+    right: 50%;
+    background: #fff;
+    padding: 8px 16px;
+    .borderRadius();
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+    transition: all .3s ease-in-out;
+    .xui-message-icon{
+        position: absolute;
+        left: 16px;
+        top: 50%;
+        margin-top: -9px;
+        font-size: 14px;
+    }
+}
+
+.xui-message-info-icon{
+    padding:10px 16px 10px 36px;
+    .xui-message-icon{
+        color: @base-primary;
+    }
+}
+
+
+//Model 对话框
+.xui-model{
+    display: none;
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: 999;
+    background-color: rgba(0,0,0,.5);
+    transition: all .3s ease-in-out;
+}
+.xui-model-container{
+    position: relative;
+    width: 600px;
+    background-color: #fff;
+    margin: auto;
+    .borderRadius();
+    overflow: hidden;
+    top: 50px;
+}
+.xui-model-header{
+    padding: 15px;
+    border-bottom: 1px solid #e9eaec;
+    .xui-model-title{
+        margin: 0;
+        font-weight: bold;
+        font-size: 14px;
+        display: inline-block;
+    }
+    .xui-model-close{
+        float: right;
+        font-size: 30px;
+        margin-top: -10px;
+    }
+}
+
+.xui-model-body{
+    padding: 15px;
+}
+
+.xui-model-footer{
+    text-align: right;
+    padding: 12px 15px;
+    border-top: 1px solid #e9eaec;
+    .xui-btn{
+        margin-left: 6px;
+    }
+}
+
+
+//progress 进度条
+.xui-progress{
+    display: inline-block;
+    width: 100%;
+    font-size: 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+.xui-progress-body{
+    display: inline-block;
+    width: 100%;
+}
+
+.xui-progress-inner{
+    display: inline-block;
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 100px;
+    vertical-align: middle;
+}
+.xui-progress-bg{
+    position: relative;    
+    background: #2db7f5;
+    border-radius: 100px;
+    transition: all .3s linear;
+}
+
+.xui-progress-show-info{
+    .xui-progress-body{
+        padding-right: 55px;
+        margin-right: -55px;
+    }
+    
+}
+
+.xui-progress-text{
+    display: inline-block;
+    text-align: left;
+    margin-left: 5px;
+}
+
+
+.xui-progress-active{
+    .xui-progress-bg:after{
+        content: '';
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        background: @base-color-white;
+        border-radius: 10px;
+        animation: xui-progress-active 2s ease-in-out infinite;
+    }
+}
+
+
+
+//collapse 折叠面板
+.xui-collapse{
+    width: 100%;
+    background: @base-color-f7f7f7;
+    .borderRadius();
+    border: 1px solid @base-color-dddee1;
+}
+
+.xui-collapse-item:not(:last-child){
+    border-bottom: 1px solid @base-color-dddee1;
+}
+
+.xui-collapse-active{
+    .xui-collapse-header > i{
+        transform: rotate(180deg);
+    }
+}
+
+.xui-collapse-header{
+    position: relative;
+    padding: 0 16px;
+    height: 38px;
+    line-height: 38px;
+    color: #666;
+    cursor: pointer; 
+    > i{
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        margin-top: -20px;
+        font-size: 14px;
+        transition: all .3s linear;
+    } 
+}
+
+.xui-collapse-body{
+    display: none;
+    background-color: #fff;
+    overflow: hidden;
+    padding: 16px;
+    color: @base-color-default;
+    font-size: 14px;
+}
+
+
+

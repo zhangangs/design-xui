@@ -1,0 +1,83 @@
+@chaset 'utf-8';
+
+/* Animate */
+.slide-up-enter-active {
+    animation-duration: .3s;
+    animation-fill-mode: both;
+    animation-play-state: paused;
+    opacity: 0;
+    animation-timing-function: ease-in-out;
+    animation-name: xuiSlideUpIn;
+    animation-play-state: running
+}
+
+.slide-up-leave-active {
+    animation-duration: .3s;
+    animation-fill-mode: both;
+    animation-play-state: paused;
+    animation-name: xuiSlideUpOut;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out
+}
+
+@keyframes xuiSlideUpIn {
+    0% {
+        opacity: 0;
+        transform-origin: 0 0;
+        transform: scaleY(.8)
+    }
+    to {
+        opacity: 1;
+        transform-origin: 0 0;
+        transform: scaleY(1)
+    }
+}
+
+@keyframes xuiSlideUpOut {
+    0% {
+        opacity: 1;
+        transform-origin: 0 0;
+        transform: scaleY(1)
+    }
+    to {
+        opacity: 0;
+        transform-origin: 0 0;
+        transform: scaleY(.8)
+    }
+}
+
+
+.fadeInDown{
+  animation-duration: .5s;
+  animation-fill-mode: both;
+  animation-play-state: paused;
+  animation-name: fadeInDown;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
+}
+ 
+.fadeInUp{
+  animation-duration: .5s;
+  animation-fill-mode: both;
+  animation-play-state: paused;
+  animation-name: fadeInUp;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes fadeInDown{
+    0%{opacity:0;transform:translateY(-20px)}
+    to{opacity:1;transform:none};
+}
+
+
+@keyframes fadeInUp{
+    0%{opacity:1;transform:none}
+    to{opacity:0;transform:translateY(-20px)};
+ }
+ 
+
+@keyframes xui-progress-active{
+    0%{opacity:.3;width:0}
+    to{opacity:0;width:100%};
+}

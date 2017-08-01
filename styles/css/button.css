@@ -36,9 +36,9 @@ button[disabled].xui-btn-default:hover {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  -moz-transition: color 0.3s ease-out, background-color 0.3s ease-in-out;
-  -webkit-transition: color 0.3s ease-out, background-color 0.3s ease-in-out;
-  transition: color 0.3s ease-out, background-color 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: color all 0.3s ease-out;
   outline: none;
 }
 .xui-btn:hover {

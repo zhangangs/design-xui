@@ -42,7 +42,48 @@ hr{
 a{
   color: @base-primary; text-decoration: none;
   transition: all .3s ease-in-out;
+  &:hover{
+    opacity: .8; text-decoration: underline;
+  }
+
 }
-a:hover{
-  opacity: .8; text-decoration: underline;
+
+/* image 图片 */
+.img{
+  vertical-align: middle;
 }
+
+/* 浮动  */
+.xui-float-left{
+  float: left!important;
+}
+.xui-float-right{
+  float: right!important;
+}
+
+.xui-cleanfix{
+  &:before,
+  &:after{
+    content: '';
+    display: table;
+  }
+  &:after{
+    clear: both;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

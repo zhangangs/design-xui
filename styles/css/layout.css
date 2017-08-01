@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -444,4 +445,23 @@ a {
 a:hover {
   opacity: .8;
   text-decoration: underline;
+}
+/* image 图片 */
+.img {
+  vertical-align: middle;
+}
+/* 浮动  */
+.xui-float-left {
+  float: left!important;
+}
+.xui-float-right {
+  float: right!important;
+}
+.xui-cleanfix:before,
+.xui-cleanfix:after {
+  content: '';
+  display: table;
+}
+.xui-cleanfix:after {
+  clear: both;
 }

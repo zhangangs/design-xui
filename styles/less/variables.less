@@ -1,3 +1,4 @@
+@charset "UTF-8";
 //
 // Variables 变量文件
 // --------------------------------------------------
@@ -22,7 +23,6 @@
 @base-info: #5bc0de;
 @base-warn: #ff9900;
 @base-danger: #ed3f14; 
-
 @base-f9f9f9: #f9f9f9;
 
 /* 字体颜色 */
@@ -30,11 +30,16 @@
 @base-color-white: #fff;
 @base-color-dddee1: #dddee1;
 @base-color-e9eaec: #e9eaec;
+@base-color-eee: #eee;
+@base-color-f7f7f7: #f7f7f7;
+@base-color-f5f5f5: #f5f5f5;
+@base-color-f3f3f3: #f3f3f3;
 
 /* 边框颜色  */
 @border-color-default: #dddee1;
 @border-color-e4e5e7: #e4e5e7;
 @border-color-bcbcbc: #bcbcbc;
+@border-color-ccc: #ccc;
 
 /* Border-radius
 -------------------------------------------------- */
@@ -48,9 +53,9 @@
 /* Hover Transition Style 
 -------------------------------------------------- */
 .Transition(@time: .3s){
-  -moz-transition: color @time ease-out, background-color @time ease-in-out;
-  -webkit-transition: color @time ease-out, background-color @time ease-in-out;
-  transition: color @time ease-out, background-color @time ease-in-out;
+  -moz-transition: all @time ease-out;
+  -webkit-transition: all @time ease-out; 
+  transition: color all @time ease-out;
 }
 
 
