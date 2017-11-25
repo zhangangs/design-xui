@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
- <!--   <link rel="stylesheet" href="styles/css/animate.css"/>
+
+<head>
+	<meta charset="utf-8">
+	<!--   <link rel="stylesheet" href="styles/css/animate.css"/>
     <link rel="stylesheet" href="styles/css/layout.css">
     <link rel="stylesheet" href="styles/css/grid.css"/>
     <link rel="stylesheet" href="styles/css/form.css"/>
@@ -10,717 +11,773 @@
     <link rel="stylesheet" href="styles/css/ionicons.css"/>
     <link rel="stylesheet" href="styles/css/table.css" />
     <link rel="stylesheet" href="styles/css/view.css"/>-->
-    <link rel="stylesheet" type="text/css" href="lib/xui.css"/>
-    <title>xiu DEMO</title>
-    <style type="text/css">
-    	body{
-    	  max-width: 1000px; margin: auto;
-    	}
-    	.demo-grid{margin-bottom: 10px;}
-    	.demo-grid>div{
-    		padding: 10px 0;
-    	}
-    	.demo-grid>div:nth-child(odd){
-    		background: #2d8cf0;
-    		text-align: center;
-    		font-size: 14px;
-    		color: #fff;
-    	}
-    	.demo-grid>div:nth-child(even){
-    		background: #19be6b;
-    		text-align: center;
-    		font-size: 14px;
-    		color: #fff;
-    	}
-    	
-    	.xui-alert{
-    		margin-bottom: 10px;
-    	}
-    	button[type='reset']{
-    		margin-left: 8px;
-    	}
-    </style>
-  </head>
-  <body>
-    <div name="按钮">
-    	<h1>按钮</h1>
-    	<hr />
-      <button class="xui-btn xui-btn-default">
-      	<span>按钮</span>
-      </button>
-      <button disabled class="xui-btn xui-btn-primary">
-      	<span>Primary</span>
-      </button>
-      <button class="xui-btn xui-btn-success">
-      	<span>Success</span>
-      </button>
-      <button class="xui-btn xui-btn-info">
-      	<span>Info</span>
-      </button>
-      <button class="xui-btn xui-btn-warn">
-      	<span>Warning</span>
-      </button>
-      <button class="xui-btn xui-btn-danger">
-      	<span>Danger</span>
-      </button>
-      <button class="xui-btn xui-btn-link">
-      	<span>link链接 </span>
-      </button>
-      <button disabled class="xui-btn xui-btn-default">
-      	<span>disabled</span>
-      </button>
-      <p>
-      	<button class="xui-btn xui-btn-primary ivu-btn-block">
-	      	<span>块级button</span>
-	      </button>
-      </p>
-      <p>
-      	<button class="xui-btn xui-btn-success ivu-btn-block">
-	      	<span>块级button</span>
-	      </button>
-      </p>
-      <p>
-      	<h5>按钮组</h5>
-      	<div class="xui-btn-gruop">
-      		<button class="xui-btn xui-btn-default">第一个</button>
-      		<button class="xui-btn xui-btn-default">第二个</button>
-      		<button class="xui-btn xui-btn-default">第三个</button>
-      	</div>
-      </p>
-    </div>
-    
-    <div name="栅格">
-    	<h1>栅格</h1>
-    	<hr />
-    	<div class="xui-row demo-grid">
-    		<div class="xui-col-12">xui-col-12</div>
-    	</div>
-    	<div class="xui-row demo-grid">
-    		<div class="xui-col-11">xui-col-11</div>
-    		<div class="xui-col-1">xui-col-1</div>
-    	</div>
-    	<div class="xui-row demo-grid">
-    		<div class="xui-col-10">xui-col-10</div>
-    		<div class="xui-col-2">xui-col-2</div>
-    	</div>
-    	<div class="xui-row demo-grid">
-    		<div class="xui-col-6">xui-col-6</div>
-    		<div class="xui-col-6">xui-col-6</div>
-    	</div>
-    	<div class="xui-row demo-grid">
-    		<div class="xui-col-3">xui-col-3</div>
-    		<div class="xui-col-5">xui-col-5</div>
-    		<div class="xui-col-4">xui-col-4</div>
-    	</div>
-    	    	<div class="xui-row demo-grid">
-    		<div class="xui-col-3">xui-col-3</div>
+	<link rel="stylesheet" type="text/css" href="lib/xui.css" />
+	<title>xiu DEMO</title>
+	<style type="text/css">
+		body {
+			max-width: 1000px;
+			margin: auto;
+		}
 
-    		<div class="xui-col-4 xui-col-offset-5">xui-col-4 xui-col-offset-5</div>
-    	</div>
-    </div>
-    <div name="表单">
-    	<h1>表单</h1>
-    	<hr />
-    	<input class="xui-input" type="text" placeholder="请输入..." />
-    	<hr />
-    	<h3><b>带图标的input框</b></h3>
-    	<div class="xui-row">
-    		<div class="xui-col-6">
-    			<div class="xui-input-wrapper xui-icon-left">
-    				<i class="xui-icon ion-android-alarm-clock xui-input-icon"></i>
-	    			<input type="text" placeholder="请输入..." class="xui-input" />	    			
-    			</div>
-    		</div>
-    		<div class="xui-col-6">
-    			<div class="xui-input-wrapper xui-icon-right">
-    				<i class="xui-icon ion-android-alarm-clock xui-input-icon"></i>
-	    			<input type="text" placeholder="请输入..." class="xui-input" />	    			
-    			</div>
-    		</div>
-    	</div>
-    	<hr />
-    	<h3>多行文本框</h3>
-    	<textarea class="xui-input" rows="4" cols="" placeholder="多行文本框..."></textarea>
-    	
-    	<p>禁用文本框</p>
-    	
-    	<input type="text" class="xui-input" placeholder="禁用的文本框..." disabled />
-    	<p></p>
-    	<textarea name="" rows="3" class="xui-input" disabled placeholder="禁用的多行文本框..."></textarea>    	
-    	<hr />
-    	
-    	<h1>Radio 单选框</h1>
-    	<hr />
-    	<div class="xui-radio-group">
-    		<label class="xui-radio-inline">
-    			<span class="xui-radio">
-    				<span class="xui-radio-inner"></span>
-    				<input type="radio" class="xui-radio-input" />
-    			</span>
-    			<span>Apple</span>
-    		</label>
-    		<label class="xui-radio-inline">
-    			<span class="xui-radio">
-    				<span class="xui-radio-inner"></span>
-    				<input type="radio" class="xui-radio-input" />
-    			</span>
-    			<span>Android</span>
-    		</label>
-    		<label class="xui-radio-inline">
-    			<span class="xui-radio">
-    				<span class="xui-radio-inner"></span>
-    				<input type="radio" class="xui-radio-input" />
-    			</span>
-    			<span>Windows</span>
-    		</label>
-    	</div>
-    	<hr />
-    	<div class="xui-radio-group">
-    		<label>
-    			<span class="xui-radio">
-    				<span class="xui-radio-inner"></span>
-    				<input type="radio" class="xui-radio-input" />
-    			</span>
-    			<span>Apple</span>
-    		</label>
-    		<label>
-    			<span class="xui-radio">
-    				<span class="xui-radio-inner"></span>
-    				<input type="radio" class="xui-radio-input" />
-    			</span>
-    			<span>Android</span>
-    		</label>
-    		<label>
-    			<span class="xui-radio">
-    				<span class="xui-radio-inner"></span>
-    				<input type="radio" class="xui-radio-input" />
-    			</span>
-    			<span>Windows</span>
-    		</label>
-    	</div>
-    	<h1>checkbox 多选框</h1>
-    	<div class="xui-checkbox-group">
-    		<label>
-    			<span class="xui-checkbox">
-    				<span class="xui-checkbox-inner"></span>
-    				<input type="checkbox" class="xui-checkbox-input" />
-    			</span>
-    			<span>香蕉</span>
-    		</label>
-    		<label>
-    			<span class="xui-checkbox">
-    				<span class="xui-checkbox-inner"></span>
-    				<input type="checkbox" class="xui-checkbox-input" />
-    			</span>
-    			<span>苹果</span>
-    		</label>
-    			<label>
-    			<span class="xui-checkbox">
-    				<span class="xui-checkbox-inner"></span>
-    				<input type="checkbox" class="xui-checkbox-input" />
-    			</span>
-    			<span>苹果</span>
-    		</label>
-    	</div>
-    	<hr />
-    	<div class="xui-checkbox-group">
-    		<label class="xui-checkbox-inline">
-    			<span class="xui-checkbox">
-    				<span class="xui-checkbox-inner"></span>
-    				<input type="checkbox" class="xui-checkbox-input" />
-    			</span>
-    			<span>香蕉</span>
-    		</label>
-    		<label class="xui-checkbox-inline">
-    			<span class="xui-checkbox">
-    				<span class="xui-checkbox-inner"></span>
-    				<input type="checkbox" class="xui-checkbox-input" />
-    			</span>
-    			<span>苹果</span>
-    		</label>
-    		<label class="xui-checkbox-inline">
-    			<span class="xui-checkbox">
-    				<span class="xui-checkbox-inner"></span>
-    				<input type="checkbox" class="xui-checkbox-input" />
-    			</span>
-    			<span>芒果</span>
-    		</label>
-    	</div>
-    	<hr />
-    	<h1>select 下拉菜单</h1>
-    	<div class="xui-select">
-    		<div class="xui-select-selection">
-    			<span class="xui-select-placeholder">请选择所在地</span>
-    			<span class="xui-select-value"></span>
-    			<i class="xui-icon ion-android-arrow-dropdown"></i>
-    		</div>
-    		<div class="xui-select-dropdown">
-    			<ul class="xui-select-dropdown-list">
-    				<li>北京市</li>
-    				<li>上海市</li>
-    				<li>深圳市</li>
-    			</ul>
-    		</div>
-    	</div>
-    	<hr />
-    	<h1>表单 - 基础实例</h1>
-    	<form class="xui-form">
-    		<div class="xui-form-group">
-    			<label class="xui-form-label">姓名</label>
-    			<input type="text" class="xui-input" placeholder="输入姓名" />
-    		</div>
-    		<div class="xui-form-group">
-    			<label class="xui-form-label">地址</label>
-    			<input type="text" class="xui-input" placeholder="输入姓名" />
-    		</div>
-    		<div class="xui-form-group">
-    			<label class="xui-form-label">介绍</label>
-    			<textarea class="xui-input" rows="3" placeholder="请输入介绍..."></textarea>
-    		</div>
-    		<div class="xui-form-group">
-    			<button type="button" class="xui-btn xui-btn-primary">提交</button>
-    			<button type="reset"  class="xui-btn xui-btn-default">取消</button>
-    		</div>
-    	</form>
-    	<hr />
-    	<h1>表单 - 水平排列的表单</h1>
-    	<form class="xui-form xui-form-horizontal">
-    		<div class="xui-form-group">
-    			<label class="xui-form-label xui-col-1">姓名</label>
-    			<div class="xui-col-5">
-    				<input type="text" class="xui-input" placeholder="输入姓名" />
-    			</div>
-    		</div>
-    		<div class="xui-form-group">
-    			<label class="xui-form-label xui-col-1">地址</label>
-    			<div class="xui-col-5">
-    				<input type="text" class="xui-input" placeholder="输入姓名" />
-    			</div>
-    		</div>
-    		<div class="xui-form-group">
-    			<label class="xui-form-label xui-col-1">介绍</label>
-    			<div class="xui-col-5">
-    				<textarea class="xui-input" rows="3" placeholder="请输入介绍..."></textarea>
-    			</div>
-    		</div>
-    		<div class="xui-form-group">
-    			<div class="xui-col-5 xui-col-offset-1">
-    				<div class="xui-checkbox-group">
-	    				<label>
-	    					<span class="xui-checkbox">
-	    						<span class="xui-checkbox-inner"></span>
-	    						<input type="checkbox" class="xui-checkbox-input" />
-	    					</span>
-	    					<span>记住密码</span>
-	    				</label>
-	    			</div>
-    			</div>
-    		</div>
-    		<div class="xui-form-group">
-    			<div class="xui-col-5 xui-col-offset-1">
-    				<button type="button" class="xui-btn xui-btn-primary">提交</button>
-    				<button type="reset"  class="xui-btn xui-btn-default">取消</button>
-    			</div>
-    		</div>
-    	</form>
-    	<hr />
-    	<h1>表单 - 内联表单</h1>
-    	<form class="xui-form xui-form-inline">
-    		<div class="xui-form-group">
-    			<label class="xui-form-label">姓名</label>
-    			<input type="text" class="xui-input" placeholder="输入姓名" />
-    		</div>
-    		<div class="xui-form-group">
-    			<label class="xui-form-label">地址</label>
-    			<input type="text" class="xui-input" placeholder="输入地址" />
-    		</div>
-    		<div class="xui-form-group">
-    			<label class="xui-form-label">电话</label>
-    			<input type="text" class="xui-input" placeholder="输入电话" />
-    		</div>
-    		<div class="xui-form-group">
-    			<button type="button" class="xui-btn xui-btn-primary">提交</button>
-    			<button type="reset" class="xui-btn xui-btn-default">取消</button>
-    		</div>
-    	</form>
-    	<hr />	    
-    </div>
-    <h1>Table 表格</h1>
-    	<table class="xui-table">
-    		<thead>
-    			<tr>
-    				<th>姓名</th>
-    				<th>年龄</th>
-    				<th>地址</th>
-    				<th>操作</th>
-    			</tr>
-    		</thead>
-    		<tbody>
-    			<tr>
-    				<td>王小明</td>
-    				<td>18</td>
-    				<td>北京市朝阳区芍药居</td>
-    				<td><a href="">操作</a></td>
-    			</tr>
-    			<tr>
-    				<td>王小明</td>
-    				<td>18</td>
-    				<td>北京市朝阳区芍药居</td>
-    				<td><a href="">操作</a></td>
-    			</tr>
-    			<tr>
-    				<td>王小明</td>
-    				<td>18</td>
-    				<td>北京市朝阳区芍药居</td>
-    				<td><a href="">操作</a></td>
-    			</tr>
-    			<tr>
-    				<td>王小明</td>
-    				<td>18</td>
-    				<td>北京市朝阳区芍药居</td>
-    				<td><a href="">操作</a></td>
-    			</tr>
-    		</tbody>    		
-	    </table>
-	    <h1>条纹状表格</h1>
-    	<table class="xui-table xui-table-striped">
-    		<thead>
-    			<tr>
-    				<th>姓名</th>
-    				<th>年龄</th>
-    				<th>地址</th>
-    				<th>操作</th>
-    			</tr>
-    		</thead>
-    		<tbody>
-    			<tr>
-    				<td>王小明</td>
-    				<td>18</td>
-    				<td>北京市朝阳区芍药居</td>
-    				<td><a href="">操作</a></td>
-    			</tr>
-    			<tr>
-    				<td>王小明</td>
-    				<td>18</td>
-    				<td>北京市朝阳区芍药居</td>
-    				<td><a href="">操作</a></td>
-    			</tr>
-    			<tr>
-    				<td>王小明</td>
-    				<td>18</td>
-    				<td>北京市朝阳区芍药居</td>
-    				<td><a href="">操作</a></td>
-    			</tr>
-    			<tr>
-    				<td>王小明</td>
-    				<td>18</td>
-    				<td>北京市朝阳区芍药居</td>
-    				<td><a href="">操作</a></td>
-    			</tr>
-    		</tbody>    		
-	    </table>
-	    <h1>带边框的表格</h1>
-    	<table class="xui-table xui-table-bordered">
-    		<thead>
-    			<tr>
-    				<th>姓名</th>
-    				<th>年龄</th>
-    				<th>地址</th>
-    				<th>操作</th>
-    			</tr>
-    		</thead>
-    		<tbody>
-    			<tr>
-    				<td>王小明</td>
-    				<td>18</td>
-    				<td>北京市朝阳区芍药居</td>
-    				<td><a href="">操作</a></td>
-    			</tr>
-    			<tr>
-    				<td>王小明</td>
-    				<td>18</td>
-    				<td>北京市朝阳区芍药居</td>
-    				<td><a href="">操作</a></td>
-    			</tr>
-    			<tr>
-    				<td>王小明</td>
-    				<td>18</td>
-    				<td>北京市朝阳区芍药居</td>
-    				<td><a href="">操作</a></td>
-    			</tr>
-    			<tr>
-    				<td>王小明</td>
-    				<td>18</td>
-    				<td>北京市朝阳区芍药居</td>
-    				<td><a href="">操作</a></td>
-    			</tr>
-    		</tbody>    		
-	    </table>
-	    <h1>鼠标悬停</h1>
-	    <table class="xui-table xui-table-hover">
-    		<thead>
-    			<tr>
-    				<th>姓名</th>
-    				<th>年龄</th>
-    				<th>地址</th>
-    				<th>操作</th>
-    			</tr>
-    		</thead>
-    		<tbody>
-    			<tr>
-    				<td>王小明</td>
-    				<td>18</td>
-    				<td>北京市朝阳区芍药居</td>
-    				<td><a href="">操作</a></td>
-    			</tr>
-    			<tr>
-    				<td>王小明</td>
-    				<td>18</td>
-    				<td>北京市朝阳区芍药居</td>
-    				<td><a href="">操作</a></td>
-    			</tr>
-    			<tr>
-    				<td>王小明</td>
-    				<td>18</td>
-    				<td>北京市朝阳区芍药居</td>
-    				<td><a href="">操作</a></td>
-    			</tr>
-    			<tr>
-    				<td>王小明</td>
-    				<td>18</td>
-    				<td>北京市朝阳区芍药居</td>
-    				<td><a href="">操作</a></td>
-    			</tr>
-    		</tbody>    		
-	    </table>
-	    <h1>浮动和清除浮动</h1>
-	    <hr />
-	    <div>
-	    	<p class="xui-float-left">左浮动</p>
-	    	<p class="xui-float-right">右浮动</p>
-	    	<div class="xui-cleanfix"></div>
-	    	<p>清除浮动</p>
-	    </div>
-	    <h1>Switch 开关</h1>
-	    <hr />
-	    <span class="xui-switch xui-switch-checked">
-	    	<span class="xui-switch-inner"></span>
-	    </span>
-	    <h1>Cascader 级联选择[只有css]</h1>
-	    <hr />
-	    <div class="xui-cascader">
-	    	<div class="xui-cascader-rel">
-	    		<span class="xui-cascader-placeholder">请选择</span>
-	    		<div class="xui-cascader-label"></div>
-	    		<i class="xui-icon ion-android-arrow-dropdown"></i>
-	    	</div>
-	    	<div class="xui-cascader-dropdown">
-	    		<ul class="xui-cascader-menu">
-	    			<li>北京<i class="xui-icon ion-ios-arrow-right"></i>	</li>
-	    			<li>江苏<i class="xui-icon ion-ios-arrow-right"></i></li>
-	    			<li>重庆</li>
-	    		</ul>
-	    		<ul class="xui-cascader-menu">
-	    			<li>北京<i class="xui-icon ion-ios-arrow-right"></i>	</li>
-	    			<li>江苏<i class="xui-icon ion-ios-arrow-right"></i></li>
-	    			<li>重庆</li>
-	    		</ul>
-	    		<ul class="xui-cascader-menu">
-	    			<li>北京<i class="xui-icon ion-ios-arrow-right"></i>	</li>
-	    			<li>江苏<i class="xui-icon ion-ios-arrow-right"></i></li>
-	    			<li>重庆</li>
-	    		</ul>
-	    	</div>
-	    </div>
-	    
-	    <h1>Alert 警告提示</h1>
-	    <hr />
-	    
-	    <div class="xui-alert xui-alert-info">
-	    	<div class="xui-alert-message">消息提示文案</div>
-	    	<div class="xui-alert-desc"></div>
-	    </div>
-	    
-	    <div class="xui-alert xui-alert-success">
-	    	<div class="xui-alert-message">成功提示文案</div>
-	    	<div class="xui-alert-desc"></div>
-	    </div>
-	    
-	    <div class="xui-alert xui-alert-warning">
-	    	<div class="xui-alert-message">警告提示文案</div>
-	    	<div class="xui-alert-desc"></div>
-	    </div>
-	    
-	    <div class="xui-alert xui-alert-error">
-	    	<div class="xui-alert-message">错误提示文案</div>
-	    	<div class="xui-alert-desc">自定义错误描述文案。自定义错误描述文案。</div>
-	    </div>
-	    
-	    <div class="xui-alert xui-alert-info xui-alert-with-icon">
-	    	<span class="xui-alert-icon">
-	    		<i class="xui-icon ion-information-circled"></i>
-	    	</span>
-	    	<div class="xui-alert-message">消息提示文案</div>
-	    	<div class="xui-alert-desc"></div>
-	    </div>
-	    
-	    <div class="xui-alert xui-alert-success xui-alert-with-icon">
-	    	<span class="xui-alert-icon">
-	    		<i class="xui-icon ion-checkmark-circled"></i>
-	    	</span>
-	    	<div class="xui-alert-message">成功提示文案</div>
-	    	<div class="xui-alert-desc"></div>
-	    </div>
-	    
-	    <div class="xui-alert xui-alert-warning xui-alert-with-icon">
-	    	<span class="xui-alert-icon">
-	    		<i class="xui-icon ion-android-alert"></i>
-	    	</span>
-	    	<div class="xui-alert-message">警告提示文案</div>
-	    	<div class="xui-alert-desc"></div>
-	    </div>
-	    
-	    <div class="xui-alert xui-alert-error xui-alert-with-icon">
-	    	<span class="xui-alert-icon">
-	    		<i class="xui-icon ion-close-circled"></i>
-	    	</span>
-	    	<div class="xui-alert-message">错误提示文案</div>
-	    	<div class="xui-alert-desc">自定义错误描述文案。自定义错误描述文案。</div>
-	    </div>
-	    <br />
-	    <h1>Message 全局提示</h1>
-	    <hr />
-	    <button class="xui-btn xui-btn-primary" id="mymsg">显示普通提示</button>
-	    <br />
-	    <br />
-	    <h1>Modal 对话框</h1>
-	    <hr />
-	    <br />
-	    <button class="xui-btn xui-btn-success" id="mymodel">显示Model对话框</button>
-	    <br />
-	    <div class="xui-model fadeIn" id="model">
-	    	<div class="xui-model-container">
-    			<div class="xui-model-header">
-    				<p class="xui-model-title">普通的Modal对话框标题</p>
-    				<a href="javascript:;" class="xui-model-close">
-    					<i class="xui-icon ion-ios-close-empty"></i>
-    				</a>
-    			</div>
-    			<div class="xui-model-body">
-    				<p>对话框内容</p>
-    				<p>对话框内容</p>
-    				<p>对话框内容</p>
-    				<button class="xui-btn xui-btn-danger" id="closeModel">关闭model</button>
-    			</div>
-    			<div class="xui-model-footer">
-    				<button class="xui-btn xui-btn-link xui-model-cancel">取消</button>
-    				<button class="xui-btn xui-btn-primary">确定</button>
-    			</div>
-    		</div>
-	    </div>
-	    <br />
-	   	<h1>Progress 进度条</h1>
-	   	<hr />
-	   	<br />
-	   	<div class="xui-progress">
-	   		<div class="xui-progress-body">
-	   			<div class="xui-progress-inner">
-	   				<div class="xui-progress-bg" style="width: 25%;height: 10px;"></div>
-	   			</div>
-	   		</div>
-	   	</div>
-	   	<br />
-	   	<div class="xui-progress xui-progress-show-info">
-	   		<div class="xui-progress-body">
-	   			<div class="xui-progress-inner">
-	   				<div class="xui-progress-bg" style="width: 45%;height: 10px;"></div>
-	   			</div>
-	   		</div>
-	   		<span class="xui-progress-text">45%</span>
-	   	</div>
-	   	<br />
-	   	<div class="xui-progress xui-progress-show-info xui-progress-active">
-	   		<div class="xui-progress-body">
-	   			<div class="xui-progress-inner">
-	   				<div class="xui-progress-bg" style="width: 50%;height: 10px;"></div>
-	   			</div>
-	   		</div>
-	   		<span class="xui-progress-text">50%</span>
-	   	</div>
-	   	<br />
-	   	<div class="xui-progress xui-progress-show-info xui-progress-active">
-	   		<div class="xui-progress-body">
-	   			<div class="xui-progress-inner">
-	   				<div class="xui-progress-bg" style="width: 50%;height: 4px;"></div>
-	   			</div>
-	   		</div>
-	   		<span class="xui-progress-text">50%</span>
-	   	</div>
-	   	
-	   	<br />
-	   	<br />
-	   	<br />
-	   	
-	   	<h1>Collapse 折叠面板</h1>
-	   	<hr />
-	   	<div class="xui-collapse">
-	   		<div class="xui-collapse-item">
-	   			<div class="xui-collapse-header">
-	   				CSS
-	   				<i class="xui-icon ion-ios-arrow-down"></i>
-	   			</div>
-	   			<div class="xui-collapse-body">
-		   				层叠样式表(英文全称：Cascading Style Sheets)是一种用来表现HTML（标准通用标记语言的一个应用）或XML（标准通用标记语言的一个子集）等文件样式的计算机语言。
-	   			</div>
-	   		</div>
-	   		<div class="xui-collapse-item">
-	   			<div class="xui-collapse-header">
-	   				JAVASCRIPT
-	   				<i class="xui-icon ion-ios-arrow-down"></i>
-	   			</div>
-	   			<div class="xui-collapse-body">
-	   				JavaScript一种直译式脚本语言，是一种动态类型、弱类型、基于原型的语言，内置支持类型。
-	   			</div>
-	   		</div>
-	   		<div class="xui-collapse-item">
-	   			<div class="xui-collapse-header">
-	   				HTML
-	   				<i class="xui-icon ion-ios-arrow-down"></i>
-	   			</div>
-	   			<div class="xui-collapse-body">
-	   				超文本标记语言，标准通用标记语言下的一个应用。“超文本”就是指页面内可以包含图片、链接，甚至音乐、程序等非文字元素。
-	   			</div>
-	   		</div>
-	   	</div>
-	   	<br />
-	   	<br />
-	   	<br />
-	   	
-	   	
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="lib/xui.js"></script>
-    <script>
-    		
-			$(function(){
-				//全局提示
-				$('#mymsg').click(function(){
-					$.Message({
-						message:'这是一条提示信息,zhangangs',
-						type:'info',
-						isIcon: true,
-						time: 2
-					});
-				})
-				
-				//model提示框
-				$('#mymodel').click(function(){
-					$('#model').Modal({
-						cancel:"#closeModel" //自定义关闭按钮
-					});
-				})
-				
-				
+		.demo-grid {
+			margin-bottom: 10px;
+		}
+
+		.demo-grid>div {
+			padding: 10px 0;
+		}
+
+		.demo-grid>div:nth-child(odd) {
+			background: #2d8cf0;
+			text-align: center;
+			font-size: 14px;
+			color: #fff;
+		}
+
+		.demo-grid>div:nth-child(even) {
+			background: #19be6b;
+			text-align: center;
+			font-size: 14px;
+			color: #fff;
+		}
+
+		.xui-alert {
+			margin-bottom: 10px;
+		}
+
+		button[type='reset'] {
+			margin-left: 8px;
+		}
+	</style>
+</head>
+
+<body>
+	<div name="按钮">
+		<h1>按钮</h1>
+		<hr />
+		<button class="xui-btn xui-btn-default">
+			<span>按钮</span>
+		</button>
+		<button disabled class="xui-btn xui-btn-primary">
+			<span>Primary</span>
+		</button>
+		<button class="xui-btn xui-btn-success">
+			<span>Success</span>
+		</button>
+		<button class="xui-btn xui-btn-info">
+			<span>Info</span>
+		</button>
+		<button class="xui-btn xui-btn-warn">
+			<span>Warning</span>
+		</button>
+		<button class="xui-btn xui-btn-danger">
+			<span>Danger</span>
+		</button>
+		<button class="xui-btn xui-btn-link">
+			<span>link链接 </span>
+		</button>
+		<button disabled class="xui-btn xui-btn-default">
+			<span>disabled</span>
+		</button>
+		<p>
+			<button class="xui-btn xui-btn-primary ivu-btn-block">
+				<span>块级button</span>
+			</button>
+		</p>
+		<p>
+			<button class="xui-btn xui-btn-success ivu-btn-block">
+				<span>块级button</span>
+			</button>
+		</p>
+		<p>
+			<h5>按钮组</h5>
+			<div class="xui-btn-gruop">
+				<button class="xui-btn xui-btn-default">第一个</button>
+				<button class="xui-btn xui-btn-default">第二个</button>
+				<button class="xui-btn xui-btn-default">第三个</button>
+			</div>
+		</p>
+	</div>
+
+	<div name="栅格">
+		<h1>栅格</h1>
+		<hr />
+		<div class="xui-row demo-grid">
+			<div class="xui-col-12">xui-col-12</div>
+		</div>
+		<div class="xui-row demo-grid">
+			<div class="xui-col-11">xui-col-11</div>
+			<div class="xui-col-1">xui-col-1</div>
+		</div>
+		<div class="xui-row demo-grid">
+			<div class="xui-col-10">xui-col-10</div>
+			<div class="xui-col-2">xui-col-2</div>
+		</div>
+		<div class="xui-row demo-grid">
+			<div class="xui-col-6">xui-col-6</div>
+			<div class="xui-col-6">xui-col-6</div>
+		</div>
+		<div class="xui-row demo-grid">
+			<div class="xui-col-3">xui-col-3</div>
+			<div class="xui-col-5">xui-col-5</div>
+			<div class="xui-col-4">xui-col-4</div>
+		</div>
+		<div class="xui-row demo-grid">
+			<div class="xui-col-3">xui-col-3</div>
+
+			<div class="xui-col-4 xui-col-offset-5">xui-col-4 xui-col-offset-5</div>
+		</div>
+	</div>
+	<div name="表单">
+		<h1>表单</h1>
+		<hr />
+		<input class="xui-input" type="text" placeholder="请输入..." />
+		<hr />
+		<h3>
+			<b>带图标的input框</b>
+		</h3>
+		<div class="xui-row">
+			<div class="xui-col-6">
+				<div class="xui-input-wrapper xui-icon-left">
+					<i class="xui-icon ion-android-alarm-clock xui-input-icon"></i>
+					<input type="text" placeholder="请输入..." class="xui-input" />
+				</div>
+			</div>
+			<div class="xui-col-6">
+				<div class="xui-input-wrapper xui-icon-right">
+					<i class="xui-icon ion-android-alarm-clock xui-input-icon"></i>
+					<input type="text" placeholder="请输入..." class="xui-input" />
+				</div>
+			</div>
+		</div>
+		<hr />
+		<h3>多行文本框</h3>
+		<textarea class="xui-input" rows="4" cols="" placeholder="多行文本框..."></textarea>
+
+		<p>禁用文本框</p>
+
+		<input type="text" class="xui-input" placeholder="禁用的文本框..." disabled />
+		<p></p>
+		<textarea name="" rows="3" class="xui-input" disabled placeholder="禁用的多行文本框..."></textarea>
+		<hr />
+
+		<h1>Radio 单选框</h1>
+		<hr />
+		<div class="xui-radio-group">
+			<label class="xui-radio-inline">
+				<span class="xui-radio">
+					<span class="xui-radio-inner"></span>
+					<input type="radio" class="xui-radio-input" />
+				</span>
+				<span>Apple</span>
+			</label>
+			<label class="xui-radio-inline">
+				<span class="xui-radio">
+					<span class="xui-radio-inner"></span>
+					<input type="radio" class="xui-radio-input" />
+				</span>
+				<span>Android</span>
+			</label>
+			<label class="xui-radio-inline">
+				<span class="xui-radio">
+					<span class="xui-radio-inner"></span>
+					<input type="radio" class="xui-radio-input" />
+				</span>
+				<span>Windows</span>
+			</label>
+		</div>
+		<hr />
+		<div class="xui-radio-group">
+			<label>
+				<span class="xui-radio">
+					<span class="xui-radio-inner"></span>
+					<input type="radio" class="xui-radio-input" />
+				</span>
+				<span>Apple</span>
+			</label>
+			<label>
+				<span class="xui-radio">
+					<span class="xui-radio-inner"></span>
+					<input type="radio" class="xui-radio-input" />
+				</span>
+				<span>Android</span>
+			</label>
+			<label>
+				<span class="xui-radio">
+					<span class="xui-radio-inner"></span>
+					<input type="radio" class="xui-radio-input" />
+				</span>
+				<span>Windows</span>
+			</label>
+		</div>
+		<h1>checkbox 多选框</h1>
+		<div class="xui-checkbox-group">
+			<label>
+				<span class="xui-checkbox">
+					<span class="xui-checkbox-inner"></span>
+					<input type="checkbox" class="xui-checkbox-input" />
+				</span>
+				<span>香蕉</span>
+			</label>
+			<label>
+				<span class="xui-checkbox">
+					<span class="xui-checkbox-inner"></span>
+					<input type="checkbox" class="xui-checkbox-input" />
+				</span>
+				<span>苹果</span>
+			</label>
+			<label>
+				<span class="xui-checkbox">
+					<span class="xui-checkbox-inner"></span>
+					<input type="checkbox" class="xui-checkbox-input" />
+				</span>
+				<span>苹果</span>
+			</label>
+		</div>
+		<hr />
+		<div class="xui-checkbox-group">
+			<label class="xui-checkbox-inline">
+				<span class="xui-checkbox">
+					<span class="xui-checkbox-inner"></span>
+					<input type="checkbox" class="xui-checkbox-input" />
+				</span>
+				<span>香蕉</span>
+			</label>
+			<label class="xui-checkbox-inline">
+				<span class="xui-checkbox">
+					<span class="xui-checkbox-inner"></span>
+					<input type="checkbox" class="xui-checkbox-input" />
+				</span>
+				<span>苹果</span>
+			</label>
+			<label class="xui-checkbox-inline">
+				<span class="xui-checkbox">
+					<span class="xui-checkbox-inner"></span>
+					<input type="checkbox" class="xui-checkbox-input" />
+				</span>
+				<span>芒果</span>
+			</label>
+		</div>
+		<hr />
+		<h1>select 下拉菜单</h1>
+		<div class="xui-select">
+			<div class="xui-select-selection">
+				<span class="xui-select-placeholder">请选择所在地</span>
+				<span class="xui-select-value"></span>
+				<i class="xui-icon ion-android-arrow-dropdown"></i>
+			</div>
+			<div class="xui-select-dropdown">
+				<ul class="xui-select-dropdown-list">
+					<li>北京市</li>
+					<li>上海市</li>
+					<li>深圳市</li>
+				</ul>
+			</div>
+		</div>
+		<hr />
+		<h1>表单 - 基础实例</h1>
+		<form class="xui-form">
+			<div class="xui-form-group">
+				<label class="xui-form-label">姓名</label>
+				<input type="text" class="xui-input" placeholder="输入姓名" />
+			</div>
+			<div class="xui-form-group">
+				<label class="xui-form-label">地址</label>
+				<input type="text" class="xui-input" placeholder="输入姓名" />
+			</div>
+			<div class="xui-form-group">
+				<label class="xui-form-label">介绍</label>
+				<textarea class="xui-input" rows="3" placeholder="请输入介绍..."></textarea>
+			</div>
+			<div class="xui-form-group">
+				<button type="button" class="xui-btn xui-btn-primary">提交</button>
+				<button type="reset" class="xui-btn xui-btn-default">取消</button>
+			</div>
+		</form>
+		<hr />
+		<h1>表单 - 水平排列的表单</h1>
+		<form class="xui-form xui-form-horizontal">
+			<div class="xui-form-group">
+				<label class="xui-form-label xui-col-1">姓名</label>
+				<div class="xui-col-5">
+					<input type="text" class="xui-input" placeholder="输入姓名" />
+				</div>
+			</div>
+			<div class="xui-form-group">
+				<label class="xui-form-label xui-col-1">地址</label>
+				<div class="xui-col-5">
+					<input type="text" class="xui-input" placeholder="输入姓名" />
+				</div>
+			</div>
+			<div class="xui-form-group">
+				<label class="xui-form-label xui-col-1">介绍</label>
+				<div class="xui-col-5">
+					<textarea class="xui-input" rows="3" placeholder="请输入介绍..."></textarea>
+				</div>
+			</div>
+			<div class="xui-form-group">
+				<div class="xui-col-5 xui-col-offset-1">
+					<div class="xui-checkbox-group">
+						<label>
+							<span class="xui-checkbox">
+								<span class="xui-checkbox-inner"></span>
+								<input type="checkbox" class="xui-checkbox-input" />
+							</span>
+							<span>记住密码</span>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="xui-form-group">
+				<div class="xui-col-5 xui-col-offset-1">
+					<button type="button" class="xui-btn xui-btn-primary">提交</button>
+					<button type="reset" class="xui-btn xui-btn-default">取消</button>
+				</div>
+			</div>
+		</form>
+		<hr />
+		<h1>表单 - 内联表单</h1>
+		<form class="xui-form xui-form-inline">
+			<div class="xui-form-group">
+				<label class="xui-form-label">姓名</label>
+				<input type="text" class="xui-input" placeholder="输入姓名" />
+			</div>
+			<div class="xui-form-group">
+				<label class="xui-form-label">地址</label>
+				<input type="text" class="xui-input" placeholder="输入地址" />
+			</div>
+			<div class="xui-form-group">
+				<label class="xui-form-label">电话</label>
+				<input type="text" class="xui-input" placeholder="输入电话" />
+			</div>
+			<div class="xui-form-group">
+				<button type="button" class="xui-btn xui-btn-primary">提交</button>
+				<button type="reset" class="xui-btn xui-btn-default">取消</button>
+			</div>
+		</form>
+		<hr />
+	</div>
+	<h1>Table 表格</h1>
+	<table class="xui-table">
+		<thead>
+			<tr>
+				<th>姓名</th>
+				<th>年龄</th>
+				<th>地址</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>王小明</td>
+				<td>18</td>
+				<td>北京市朝阳区芍药居</td>
+				<td>
+					<a href="">操作</a>
+				</td>
+			</tr>
+			<tr>
+				<td>王小明</td>
+				<td>18</td>
+				<td>北京市朝阳区芍药居</td>
+				<td>
+					<a href="">操作</a>
+				</td>
+			</tr>
+			<tr>
+				<td>王小明</td>
+				<td>18</td>
+				<td>北京市朝阳区芍药居</td>
+				<td>
+					<a href="">操作</a>
+				</td>
+			</tr>
+			<tr>
+				<td>王小明</td>
+				<td>18</td>
+				<td>北京市朝阳区芍药居</td>
+				<td>
+					<a href="">操作</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h1>条纹状表格</h1>
+	<table class="xui-table xui-table-striped">
+		<thead>
+			<tr>
+				<th>姓名</th>
+				<th>年龄</th>
+				<th>地址</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>王小明</td>
+				<td>18</td>
+				<td>北京市朝阳区芍药居</td>
+				<td>
+					<a href="">操作</a>
+				</td>
+			</tr>
+			<tr>
+				<td>王小明</td>
+				<td>18</td>
+				<td>北京市朝阳区芍药居</td>
+				<td>
+					<a href="">操作</a>
+				</td>
+			</tr>
+			<tr>
+				<td>王小明</td>
+				<td>18</td>
+				<td>北京市朝阳区芍药居</td>
+				<td>
+					<a href="">操作</a>
+				</td>
+			</tr>
+			<tr>
+				<td>王小明</td>
+				<td>18</td>
+				<td>北京市朝阳区芍药居</td>
+				<td>
+					<a href="">操作</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h1>带边框的表格</h1>
+	<table class="xui-table xui-table-bordered">
+		<thead>
+			<tr>
+				<th>姓名</th>
+				<th>年龄</th>
+				<th>地址</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>王小明</td>
+				<td>18</td>
+				<td>北京市朝阳区芍药居</td>
+				<td>
+					<a href="">操作</a>
+				</td>
+			</tr>
+			<tr>
+				<td>王小明</td>
+				<td>18</td>
+				<td>北京市朝阳区芍药居</td>
+				<td>
+					<a href="">操作</a>
+				</td>
+			</tr>
+			<tr>
+				<td>王小明</td>
+				<td>18</td>
+				<td>北京市朝阳区芍药居</td>
+				<td>
+					<a href="">操作</a>
+				</td>
+			</tr>
+			<tr>
+				<td>王小明</td>
+				<td>18</td>
+				<td>北京市朝阳区芍药居</td>
+				<td>
+					<a href="">操作</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h1>鼠标悬停</h1>
+	<table class="xui-table xui-table-hover">
+		<thead>
+			<tr>
+				<th>姓名</th>
+				<th>年龄</th>
+				<th>地址</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>王小明</td>
+				<td>18</td>
+				<td>北京市朝阳区芍药居</td>
+				<td>
+					<a href="">操作</a>
+				</td>
+			</tr>
+			<tr>
+				<td>王小明</td>
+				<td>18</td>
+				<td>北京市朝阳区芍药居</td>
+				<td>
+					<a href="">操作</a>
+				</td>
+			</tr>
+			<tr>
+				<td>王小明</td>
+				<td>18</td>
+				<td>北京市朝阳区芍药居</td>
+				<td>
+					<a href="">操作</a>
+				</td>
+			</tr>
+			<tr>
+				<td>王小明</td>
+				<td>18</td>
+				<td>北京市朝阳区芍药居</td>
+				<td>
+					<a href="">操作</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h1>浮动和清除浮动</h1>
+	<hr />
+	<div>
+		<p class="xui-float-left">左浮动</p>
+		<p class="xui-float-right">右浮动</p>
+		<div class="xui-cleanfix"></div>
+		<p>清除浮动</p>
+	</div>
+	<h1>Switch 开关</h1>
+	<hr />
+	<span class="xui-switch xui-switch-checked">
+		<span class="xui-switch-inner"></span>
+	</span>
+	<h1>Cascader 级联选择[只有css]</h1>
+	<hr />
+	<div class="xui-cascader">
+		<div class="xui-cascader-rel">
+			<span class="xui-cascader-placeholder">请选择</span>
+			<div class="xui-cascader-label"></div>
+			<i class="xui-icon ion-android-arrow-dropdown"></i>
+		</div>
+		<div class="xui-cascader-dropdown">
+			<ul class="xui-cascader-menu">
+				<li>北京
+					<i class="xui-icon ion-ios-arrow-right"></i>
+				</li>
+				<li>江苏
+					<i class="xui-icon ion-ios-arrow-right"></i>
+				</li>
+				<li>重庆</li>
+			</ul>
+			<ul class="xui-cascader-menu">
+				<li>北京
+					<i class="xui-icon ion-ios-arrow-right"></i>
+				</li>
+				<li>江苏
+					<i class="xui-icon ion-ios-arrow-right"></i>
+				</li>
+				<li>重庆</li>
+			</ul>
+			<ul class="xui-cascader-menu">
+				<li>北京
+					<i class="xui-icon ion-ios-arrow-right"></i>
+				</li>
+				<li>江苏
+					<i class="xui-icon ion-ios-arrow-right"></i>
+				</li>
+				<li>重庆</li>
+			</ul>
+		</div>
+	</div>
+
+	<h1>Alert 警告提示</h1>
+	<hr />
+
+	<div class="xui-alert xui-alert-info">
+		<div class="xui-alert-message">消息提示文案</div>
+		<div class="xui-alert-desc"></div>
+	</div>
+
+	<div class="xui-alert xui-alert-success">
+		<div class="xui-alert-message">成功提示文案</div>
+		<div class="xui-alert-desc"></div>
+	</div>
+
+	<div class="xui-alert xui-alert-warning">
+		<div class="xui-alert-message">警告提示文案</div>
+		<div class="xui-alert-desc"></div>
+	</div>
+
+	<div class="xui-alert xui-alert-error">
+		<div class="xui-alert-message">错误提示文案</div>
+		<div class="xui-alert-desc">自定义错误描述文案。自定义错误描述文案。</div>
+	</div>
+
+	<div class="xui-alert xui-alert-info xui-alert-with-icon">
+		<span class="xui-alert-icon">
+			<i class="xui-icon ion-information-circled"></i>
+		</span>
+		<div class="xui-alert-message">消息提示文案</div>
+		<div class="xui-alert-desc"></div>
+	</div>
+
+	<div class="xui-alert xui-alert-success xui-alert-with-icon">
+		<span class="xui-alert-icon">
+			<i class="xui-icon ion-checkmark-circled"></i>
+		</span>
+		<div class="xui-alert-message">成功提示文案</div>
+		<div class="xui-alert-desc"></div>
+	</div>
+
+	<div class="xui-alert xui-alert-warning xui-alert-with-icon">
+		<span class="xui-alert-icon">
+			<i class="xui-icon ion-android-alert"></i>
+		</span>
+		<div class="xui-alert-message">警告提示文案</div>
+		<div class="xui-alert-desc"></div>
+	</div>
+
+	<div class="xui-alert xui-alert-error xui-alert-with-icon">
+		<span class="xui-alert-icon">
+			<i class="xui-icon ion-close-circled"></i>
+		</span>
+		<div class="xui-alert-message">错误提示文案</div>
+		<div class="xui-alert-desc">自定义错误描述文案。自定义错误描述文案。</div>
+	</div>
+	<br />
+	<h1>Message 全局提示</h1>
+	<hr />
+	<button class="xui-btn xui-btn-primary" id="mymsg">显示普通提示</button>
+	<br />
+	<br />
+	<h1>Modal 对话框</h1>
+	<hr />
+	<br />
+	<button class="xui-btn xui-btn-success" id="mymodel">显示Model对话框</button>
+	<br />
+	<div class="xui-model fadeIn" id="model">
+		<div class="xui-model-container">
+			<div class="xui-model-header">
+				<p class="xui-model-title">普通的Modal对话框标题</p>
+				<a href="javascript:;" class="xui-model-close">
+					<i class="xui-icon ion-ios-close-empty"></i>
+				</a>
+			</div>
+			<div class="xui-model-body">
+				<p>对话框内容</p>
+				<p>对话框内容</p>
+				<p>对话框内容</p>
+				<button class="xui-btn xui-btn-danger" id="closeModel">关闭model</button>
+			</div>
+			<div class="xui-model-footer">
+				<button class="xui-btn xui-btn-link xui-model-cancel">取消</button>
+				<button class="xui-btn xui-btn-primary">确定</button>
+			</div>
+		</div>
+	</div>
+	<br />
+	<h1>Progress 进度条</h1>
+	<hr />
+	<br />
+	<div class="xui-progress">
+		<div class="xui-progress-body">
+			<div class="xui-progress-inner">
+				<div class="xui-progress-bg" style="width: 25%;height: 10px;"></div>
+			</div>
+		</div>
+	</div>
+	<br />
+	<div class="xui-progress xui-progress-show-info">
+		<div class="xui-progress-body">
+			<div class="xui-progress-inner">
+				<div class="xui-progress-bg" style="width: 45%;height: 10px;"></div>
+			</div>
+		</div>
+		<span class="xui-progress-text">45%</span>
+	</div>
+	<br />
+	<div class="xui-progress xui-progress-show-info xui-progress-active">
+		<div class="xui-progress-body">
+			<div class="xui-progress-inner">
+				<div class="xui-progress-bg" style="width: 50%;height: 10px;"></div>
+			</div>
+		</div>
+		<span class="xui-progress-text">50%</span>
+	</div>
+	<br />
+	<div class="xui-progress xui-progress-show-info xui-progress-active">
+		<div class="xui-progress-body">
+			<div class="xui-progress-inner">
+				<div class="xui-progress-bg" style="width: 50%;height: 4px;"></div>
+			</div>
+		</div>
+		<span class="xui-progress-text">50%</span>
+	</div>
+
+	<br />
+	<br />
+	<br />
+
+	<h1>Collapse 折叠面板</h1>
+	<hr />
+	<div class="xui-collapse">
+		<div class="xui-collapse-item">
+			<div class="xui-collapse-header">
+				CSS
+				<i class="xui-icon ion-ios-arrow-down"></i>
+			</div>
+			<div class="xui-collapse-body">
+				层叠样式表(英文全称：Cascading Style Sheets)是一种用来表现HTML（标准通用标记语言的一个应用）或XML（标准通用标记语言的一个子集）等文件样式的计算机语言。
+			</div>
+		</div>
+		<div class="xui-collapse-item">
+			<div class="xui-collapse-header">
+				JAVASCRIPT
+				<i class="xui-icon ion-ios-arrow-down"></i>
+			</div>
+			<div class="xui-collapse-body">
+				JavaScript一种直译式脚本语言，是一种动态类型、弱类型、基于原型的语言，内置支持类型。
+			</div>
+		</div>
+		<div class="xui-collapse-item">
+			<div class="xui-collapse-header">
+				HTML
+				<i class="xui-icon ion-ios-arrow-down"></i>
+			</div>
+			<div class="xui-collapse-body">
+				超文本标记语言，标准通用标记语言下的一个应用。“超文本”就是指页面内可以包含图片、链接，甚至音乐、程序等非文字元素。
+			</div>
+		</div>
+	</div>
+	<br />
+	<br />
+	<br />
+
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="lib/xui.js"></script>
+	<script>
+
+		$(function () {
+			//全局提示
+			$('#mymsg').click(function () {
+				$.Message({
+					message: '这是一条提示信息,zhangangs',
+					type: 'info',
+					isIcon: true,
+					time: 2
+				});
 			})
-    </script>
-  </body>
+
+			//model提示框
+			$('#mymodel').click(function () {
+				$('#model').Modal({
+					cancel: "#closeModel" //自定义关闭按钮
+				});
+			})
+
+
+		})
+	</script>
+</body>
+
 </html>
