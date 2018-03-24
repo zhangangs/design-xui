@@ -1,17 +1,23 @@
 # design-xui
 练习设计一个UI组件库
 
-#### 依赖
+### 依赖
 
-使用依赖 `npm`,`bower`,`gulp`插件，请全局安装
+依赖 `npm`,`bower`,`gulp`插件，请全局安装
 
-#### 使用方法
+### 使用方法
 
 > git clone https://github.com/zhangangs/design-xui.git
+
 > cd design-xui
+
 > npm install 
+
 > bower install
+
 > gulp default
+
+<hr />
 
 公共样式		layout.css
 
