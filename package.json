@@ -1,0 +1,30 @@
+{
+  "name": "xui",
+  "version": "1.0.0",
+  "description": "design myself ui",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangangs/design-xui.git"
+  },
+  "author": "zhangangs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhangangs/design-xui/issues"
+  },
+  "homepage": "https://github.com/zhangangs/design-xui#readme",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-inject": "^4.3.1",
+    "gulp-less": "^3.3.2",
+    "gulp-less-import": "^1.0.0",
+    "wiredep": "^4.0.0"
+  }
+}

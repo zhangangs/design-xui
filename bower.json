@@ -1,0 +1,24 @@
+{
+  "name": "xui",
+  "description": "design myself ui",
+  "main": "index.js",
+  "authors": [
+    "zhangangs"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/zhangangs/design-xui",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^3.3.1"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}

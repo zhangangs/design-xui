@@ -3,15 +3,12 @@
 
 <head>
 	<meta charset="utf-8">
-	<!--   <link rel="stylesheet" href="styles/css/animate.css"/>
-    <link rel="stylesheet" href="styles/css/layout.css">
-    <link rel="stylesheet" href="styles/css/grid.css"/>
-    <link rel="stylesheet" href="styles/css/form.css"/>
-    <link rel="stylesheet" href="styles/css/button.css"/>
-    <link rel="stylesheet" href="styles/css/ionicons.css"/>
-    <link rel="stylesheet" href="styles/css/table.css" />
-    <link rel="stylesheet" href="styles/css/view.css"/>-->
-	<link rel="stylesheet" type="text/css" href="lib/xui.css" />
+	<!--bower:css -->
+	<!--endbower -->
+	<!-- inject:css -->
+	<link rel="stylesheet" href="/app/styles/css/xui.css">
+	<link rel="stylesheet" href="/app/pages/test/test.css">
+	<!-- endinject -->
 	<title>xiu DEMO</title>
 	<style type="text/css">
 		body {
@@ -752,9 +749,14 @@
 	<br />
 	<br />
 
+	<!--bower:js -->
+	<script src="../bower_components/jquery/dist/jquery.js"></script>
+	<!--endbower -->
 
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="lib/xui.js"></script>
+	<!-- inject:js -->
+	<script src="/app/vendor/xui.js"></script>
+	<script src="/app/pages/test/test.js"></script>
+	<!-- endinject -->
 	<script>
 
 		$(function () {
@@ -772,6 +774,15 @@
 			$('#mymodel').click(function () {
 				$('#model').Modal({
 					cancel: "#closeModel" //自定义关闭按钮
+				});
+			})
+
+
+		})
+	</script>
+</body>
+
+</html>
 				});
 			})
 
