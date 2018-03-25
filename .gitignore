@@ -2,3 +2,4 @@
 /bower_components/*
 /app/styles/css/xui.css
 /app/styles/less/xui.less
+/dist/*
